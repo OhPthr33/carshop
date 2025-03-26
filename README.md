@@ -33,7 +33,7 @@ Uma aplicação web moderna para venda de carros, desenvolvida com React e TypeS
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/carshop.git
+git clone https://github.com/OhPthr33/carshop.git
 ```
 
 2. Instale as dependências:
@@ -82,9 +82,3 @@ A aplicação é totalmente responsiva e funciona em:
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 📞 Contato
-
-Seu Nome - [@seutwitter](https://twitter.com/seutwitter) - email@exemplo.com
-
-Link do Projeto: [https://github.com/seu-usuario/carshop](https://github.com/seu-usuario/carshop)
