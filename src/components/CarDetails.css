@@ -1,0 +1,182 @@
+.car-details-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.car-details-content {
+  background: white;
+  width: 90%;
+  max-width: 1200px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 10px;
+  position: relative;
+  padding: 2rem;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #e74c3c;
+}
+
+.car-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.car-image-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.car-image-section img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.car-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.car-gallery img {
+  height: 100px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.car-gallery img:hover {
+  opacity: 0.8;
+}
+
+.car-info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.car-info-section h2 {
+  color: #e74c3c;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.brand {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.price {
+  color: #e74c3c;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.description {
+  color: #666;
+  line-height: 1.6;
+}
+
+.specifications {
+  margin-top: 2rem;
+}
+
+.specifications h3 {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.spec-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.spec-label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.spec-value {
+  color: #333;
+  font-weight: 500;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.test-drive-button,
+.contact-button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.test-drive-button {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.contact-button {
+  background-color: white;
+  color: #e74c3c;
+  border: 2px solid #e74c3c;
+}
+
+.test-drive-button:hover {
+  background-color: #c0392b;
+}
+
+.contact-button:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .car-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .car-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+} 
